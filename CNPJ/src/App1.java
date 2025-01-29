@@ -41,3 +41,16 @@ public class App1 {
         System.out.println(cnpj9.getCnpj());
     }
 }
+
+
+//Também implemente duas classes de exceção: 
+//uma chamada LocalTuristicoException, que será lançada se o método getLocalTuristico retornar um local inexistente (nulo);
+//e uma outra chamada CoordenadaException, que será lançada se o método setCoordenada.
+
+
+
+//setinha não branca pontilhada é uma relação de dependência 
+//setinha  branca pntilhada implementa interface
+
+//todas as partes atingida tudo true retorna o nome do návio atingido.
+
