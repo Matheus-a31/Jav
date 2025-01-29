@@ -1,18 +1,17 @@
-## Getting Started
+##Coordenada: 
+Define uma coordenada (x, y) no tabuleiro de 10x10, com métodos para acessar e modificar essas coordenadas.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+##Navio:
+Representa um navio no jogo. Cada navio tem um nome, um conjunto de partes (representadas como booleanos) que indicam se foram atingidas, e a coordenada da proa do navio. Também inclui métodos para verificar se uma parte do navio foi atingida (atingir), exibir o estado de uma parte (exibir) e retornar uma representação textual do navio (toString).
 
-## Folder Structure
+##BatalhaNaval: 
+Gerencia o tabuleiro de jogo e os navios. O tabuleiro é representado por uma matriz de objetos Atingivel, que pode ser um navio ou água. A classe inclui métodos para adicionar navios ao tabuleiro (addNavio), exibir o estado atual do tabuleiro (exibir), e registrar um tiro em uma coordenada específica (atingir).
 
-The workspace contains two folders by default, where:
+##Mar: 
+Representa uma célula de água no tabuleiro. Implementa a interface Atingivel, e pode ser atingida, retornando "Agua", ou exibir seu estado atual (exibir).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+##TiroInvalidoException: 
+Exceção lançada quando um tiro é feito em uma coordenada inválida.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+##Atingivel: 
+Interface que define os métodos atingir e exibir que devem ser implementados por todas as classes que podem ser atingidas no tabuleiro (como Navio e Mar).
